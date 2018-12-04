@@ -1,4 +1,4 @@
-package com.tomgallop.day1;
+package com.tomgallop;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class DayOneMethods {
 
     // Day 1 - 1 method
-    public static int getFrequency() {
+    public int getFrequency() {
         try {
             File file = new File("C:\\Users\\Thomas\\Desktop\\InputFiles\\input1.txt");
             BufferedReader br = new BufferedReader(new FileReader(file));
@@ -26,7 +26,7 @@ public class DayOneMethods {
     }
 
     // Day 1 - 2 method
-    public static int getDuplicate() {
+    public int getDuplicate() {
         ArrayList<Integer> arrayList = new ArrayList<>();
         int value = 0;
         int count = 0;
