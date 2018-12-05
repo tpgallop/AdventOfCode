@@ -6,10 +6,10 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class DayOneMethods {
+class DayOneMethods {
 
     // Day 1 - 1 method
-    public int getFrequency() {
+    int getFrequency() {
         try {
             File file = new File("C:\\Users\\Thomas\\Desktop\\InputFiles\\input1.txt");
             BufferedReader br = new BufferedReader(new FileReader(file));
@@ -26,10 +26,9 @@ public class DayOneMethods {
     }
 
     // Day 1 - 2 method
-    public int getDuplicate() {
+    int getDuplicate() {
         ArrayList<Integer> arrayList = new ArrayList<>();
         int value = 0;
-        int count = 0;
         while(true) {
             try {
                 File file = new File("C:\\Users\\Thomas\\Desktop\\InputFiles\\input1.txt");
@@ -43,8 +42,6 @@ public class DayOneMethods {
                         arrayList.add(value);
                     }
                 }
-                count++;
-                System.out.println("Number of iterations..." + count);
             } catch (IOException exception) {
                 exception.printStackTrace();
             }
