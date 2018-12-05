@@ -11,7 +11,7 @@ class DayTwoMethods {
         boolean hasDouble = false;
         boolean hasTriple = false;
         try{
-            File file = new File("C:\\Users\\Thomas\\Desktop\\InputFiles\\input2.txt");
+            File file = new File("data","input2.txt");
             BufferedReader br = new BufferedReader(new FileReader(file));
             String data;
             while ((data = br.readLine()) != null) {
@@ -48,13 +48,13 @@ class DayTwoMethods {
     // Day 2 - 2 Method
     String getID() {
         try{
-            File file1 = new File("C:\\Users\\Thomas\\Desktop\\InputFiles\\input2.txt");
+            File file1 = new File("data","input2.txt");
             BufferedReader br1 = new BufferedReader(new FileReader(file1));
             String data1;
             int count = 0;
             while ((data1 = br1.readLine()) != null) {
                 String[] stringArray1 = data1.split("");
-                File file2 = new File("C:\\Users\\Thomas\\Desktop\\InputFiles\\input2.txt");
+                File file2 = new File("data","input2.txt");
                 BufferedReader br2 = new BufferedReader(new FileReader(file2));
                 String data2;
                 while ((data2 = br2.readLine()) != null) {

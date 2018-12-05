@@ -11,7 +11,7 @@ class DayOneMethods {
     // Day 1 - 1 method
     int getFrequency() {
         try {
-            File file = new File("C:\\Users\\Thomas\\Desktop\\InputFiles\\input1.txt");
+            File file = new File("data","input1.txt");
             BufferedReader br = new BufferedReader(new FileReader(file));
             String data;
             int value = 0;
@@ -31,7 +31,7 @@ class DayOneMethods {
         int value = 0;
         while(true) {
             try {
-                File file = new File("C:\\Users\\Thomas\\Desktop\\InputFiles\\input1.txt");
+                File file = new File("data","input1.txt");
                 BufferedReader br = new BufferedReader(new FileReader(file));
                 String data;
                 while ((data = br.readLine()) != null) {
